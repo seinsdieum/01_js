@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="modal-cover">
+    <div id="modal-wrapper">
+        <h1>Валидация пройдена!</h1>
+        <h2>congrats</h2>
+    </div>
+</div>
+<form id="form" class="form-wrap">
+    <label>
+        <span class="necessary">Фамилия</span>
+        <input name="lastname" value="">
+    </label>
+    <label>
+        <span class="necessary">Имя</span>
+        <input name="name" value="">
+    </label>
+    <label>
+        <span class="necessary">E-mail</span>
+        <input name="email" value="">
+    </label>
+    <label>
+        <span class="necessary">Телефон <span></span></span>
+        <input name="phone" placeholder="(0xx)xxx-xx-xx" value="">
+    </label>
+    <label>
+        <span class="necessary">Город</span>
+        <select name="city">
+            <option>Минск</option>
+            <option>Орша</option>
+            <option>Могилев</option>
+            <option>Брест</option>
+            <option>Лида</option>
+        </select>
+    </label>
+    <label>
+        <span>Я учусь в БГТУ</span>
+        <input name="bstu-student" type="checkbox">
+    </label>
+    <label>
+        <span>На каком курсе вы учитесь?</span>
+        1
+        <input checked name="course" value="1" type="radio">
+        2
+        <input name="course" value="2" type="radio">
+        3
+        <input name="course" value="3" type="radio">
+        4
+        <input name="course" value="4" type="radio">
+    </label>
+    <label>
+        <span class="necessary">Расскажите о себе</span>
+        <textarea name="about"></textarea>
+    </label>
+    <button id="submit">Отправить</button>
+    <br/>
+    <span class="warning">Неправильно оформлено</span>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
